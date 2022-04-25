@@ -227,6 +227,6 @@ body {
     font-family: "Merriweather", Arial, serif;
 }
 .picture__wide{
-    width: auto;
     margin-top: 75px;
+    display: flex;
 }
