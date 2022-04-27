@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fontello.css" class="st">
     <link rel ="stylesheet" href="css/style.css">
+    <!-- jsCalendar style -->
+    <link rel="stylesheet" type="text/css" href="css/jsCalendar.css">
+    <!-- jsCalendar script -->
+    <script type="text/javascript" src="js/jsCalendar.js"></script>
+    <script type="text/javascript" src="js/jsCalendar.lang.ru.js"></script>
     <title>Document</title>
     </head>
 <body>
@@ -84,7 +89,7 @@
     <div class="team__icon-box">
         <div class="contact__item">
             <img class="team__item-img" src="img/phone_auricular_attribute_as_freepik_from_flaticoncom_3317.png" alt="">
-            <div class="phone">+7(965)773-75-25</div>
+            <div class="phone"><a href="tel:+79657737525"></a></div>
         </div>
         <div class="contact__item">
             <img class="team__item-img" src="img/pin_2_3318.png" alt="">
@@ -96,7 +101,19 @@
         </div>
     </div>
 </div>
-
+<div data-language="ru" id="calendar"></div>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+        // Get the element
+        var element = document.getElementById("calendar");
+        // Create the calendar
+        var calendar = jsCalendar.new(element);
+        calendar.select([
+            '30/04/2022',
+            '29/04/2022',
+        ]);
+    });
+</script>
 </body>
 </html>
 
