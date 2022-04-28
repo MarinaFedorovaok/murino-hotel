@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fontello.css" class="st">
     <link rel ="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
     <!-- jsCalendar style -->
     <link rel="stylesheet" type="text/css" href="css/jsCalendar.css">
     <!-- jsCalendar script -->
     <script type="text/javascript" src="js/jsCalendar.js"></script>
     <script type="text/javascript" src="js/jsCalendar.lang.ru.js"></script>
+    <!--<script type="text/javascript" src="https://unpkg.com/ical.js"></script>-->
+    <script type="text/javascript" src="js/ical.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script src="js/lightgallery.min.js"></script>
     <title>Document</title>
     </head>
 <body>
@@ -101,19 +106,9 @@
         </div>
     </div>
 </div>
-<div data-language="ru" id="calendar"></div>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function(event) {
-        // Get the element
-        var element = document.getElementById("calendar");
-        // Create the calendar
-        var calendar = jsCalendar.new(element);
-        calendar.select([
-            '30/04/2022',
-            '29/04/2022',
-        ]);
-    });
-</script>
+<div data-language="ru" id="calendar">
+	<img src="/img/loading-loading-forever.gif" alt="loading...">
+</div>
 </body>
 </html>
 
