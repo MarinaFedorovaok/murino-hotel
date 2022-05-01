@@ -227,7 +227,12 @@ body {
 }
 .picture__wide{
     margin-top: 75px;
-    display: flex;
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+.picture__wide img{
+    margin: auto;
 }
 .jsCalendar-selected{
     border: 2px solid #525252 !important;
