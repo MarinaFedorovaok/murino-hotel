@@ -237,3 +237,15 @@ body {
 .jsCalendar-selected{
     border: 2px solid #525252 !important;
 }
+
+/*Контакты*/
+
+.contact__icon-box {
+    margin: 15px;
+}
+
+.calendar{
+   display: flex;
+   margin: 15;
+   margin-left: auto;
+}
