@@ -213,5 +213,9 @@ body {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.column__container > div{
+    width: 300px;
 }
