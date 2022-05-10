@@ -17,24 +17,25 @@
     <script type="text/javascript" src="js/calendar.js"></script>
     <script src="js/lightgallery.min.js"></script>
     <title>Document</title>
-    </head>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a60a2e12-ded5-411b-b1cc-15678291296f&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/map.js"></script>    
+</head>
 <body>
     <header class="header">
         <div class="container">
             <nav>
                 <ul class = "menu">
-                    <li class="menu__item active"><a href="#">Апартаменты</a></li>
+                    <li class="menu__item"><a href="#map_container">Адрес</a></li>
+                    <li class="menu__item"><a href="#calendar">Календарь</a></li>
+                    <img src="img/razvodnye-mosty.jpg" alt="" class="logo">
                     <li class="menu__item"><a href="#price">Цены</a></li>
-                    <li class="menu__item"><img src="img/razvodnye-mosty.jpg" alt="" class="logo"></li>
                     <li class="menu__item"><a href="#contacts">Контакты</a></li>
-                    <li class="menu__item"><a href="#">Календарь</a></li>
-                   
                 </ul>
             </nav>
             <div class="header__content">
                 <h1 class="header__title">Апартаменты на Воронцовском бульваре</h1>
-                <p class="header__text">У нас всегда чисто, уютно и бюджетно</p>
-                <a href="#contacts" class="header__button">Хочу в Питер!</a>
+                <p class="header__text">Добро пожаловать в Санкт-Петербрург</p>
+                <a href="https://t.me/FedorovaMary" class="header__button">Хочу в Питер!</a>
             </div>
         </div>
     </header>
@@ -73,8 +74,9 @@
     </div>
     <div class="column__container">
         <div class="team__item">
+            <a name="contacts"></a>
             <img class="team__item-img" src="img/i.jpg" alt="">
-            <h3 class="team__item-title"><a name="contacts"></a>Марина Федорова</h3>
+            <h3 class="team__item-title">Марина Федорова</h3>
             <p class="team__item-text">Управляющий апартаментов</p>
             <div class="team__icon-box">
                 <a href="https://vk.com/fisherma"> <i class="icon-vk"></i></a>
@@ -89,25 +91,20 @@
                 <img src="/img/loading.gif" alt="loading...">
             </div>
         </div>
-    </div>
-
-    <div class="column__container">
-        <div class="team__item">
-            <h3 class="team__item-title"><a name="contacts"></a>Контакты</h3>
-            <div class="contact__icon-box">            
-                <div class="price__list">
-                    <img class="contact__item-img" src="img/pin_2_3318.png" alt="">
-                    Санкт-Петербрург, Мурино Воронцовский бульвар 11 к 6
-                </div>
-            </div>
-        </div>
         <div id="price" class="price__container">
             <h2 class="team__item-title">Сколько стоит?</h2>
             <p class="price__list">Сутки - 1500 рублей</p>
             <p class="price__list">Вместимость - 3 человека</p>
         </div>
     </div>
+    <div id="map_container">
+        <h3 class="team__item-title"><a name="contacts"></a>Адрес</h3>
+        <img class="contact__item-img" src="img/pin_2_3318.png" alt=""> Санкт-Петербрург, Мурино Воронцовский бульвар 11/6 кв 131
+        <div id="map"></div>
+    </div>
     <div class="picture__wide">
+        <img src="img/spb_big.jpg" alt="">
+        <img src="img/spb_big.jpg" alt="">
         <img src="img/spb_big.jpg" alt="">
     </div>
     <script type="text/javascript">

@@ -60,6 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu__item a{
@@ -70,17 +71,17 @@ body {
     letter-spacing: 0.04em;
     color: #989696;
     text-decoration: none;
-    margin-right: 43px;
 }
-.menu__item:last-child a{
-    margin-right: 0;
+.menu__item {
+    margin: 1%;
 }
-.active a{
-    color: #010101;
-}
+
 .logo {
-    margin: 0 16px;
+    margin: 16px;
     color: #ffffff;
+    max-width: 200px;
+    width: 15%;
+    min-width: 50px;
 }
 
 .header__content {
@@ -191,13 +192,11 @@ body {
     font-family: "Merriweather", Arial, serif;
 }
 .picture__wide{
-    margin-top: 75px;
-    display: block;
+    display: flex;
     width: auto;
     overflow: hidden;
-}
-.picture__wide img{
     margin: auto;
+    justify-content: center;
 }
 .jsCalendar-selected{
     border: 2px solid #525252 !important;
@@ -218,4 +217,17 @@ body {
 
 .column__container > div{
     width: 300px;
+}
+#map_container {
+    padding: 0 10%;
+}
+#map {
+    margin-top: 20px;
+    height: 400px;
+}
+
+@media screen and (max-width: 650px) {
+    .header__title {
+        font-size: 32px;
+    }
 }
