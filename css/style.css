@@ -230,4 +230,8 @@ body {
     .header__title {
         font-size: 32px;
     }
+    img.calendar__picture {
+      width: 10px;
+      height: auto;
+    }
 }
