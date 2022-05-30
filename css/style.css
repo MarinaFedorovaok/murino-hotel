@@ -72,6 +72,15 @@ body {
     color: #989696;
     text-decoration: none;
 }
+.menu__item_0 a{
+    font-family: "Roboto-Regular", Arial, sans-serif;
+    font-size: 25px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #989696;
+    text-decoration: none;
+}
 .menu__item {
     margin: 1%;
 }
