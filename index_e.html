@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css" class="st">
+    <link rel ="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+    <!-- jsCalendar style -->
+    <link rel="stylesheet" type="text/css" href="css/jsCalendar.css">
+    <!-- jsCalendar script -->
+    <script type="text/javascript" src="js/jsCalendar.js"></script>
+    <script type="text/javascript" src="js/jsCalendar.lang.ru.js"></script>
+    <!--<script type="text/javascript" src="https://unpkg.com/ical.js"></script>-->
+    <script type="text/javascript" src="js/ical.js"></script>
+    <script type="text/javascript">
+        var calendar_url = "http://localhost:5500/calendar_e.ics";
+    </script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a60a2e12-ded5-411b-b1cc-15678291296f&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/map_e.js"></script>    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class = "menu">
+                    <li class="menu__item"><a href="#map_container">Адрес</a></li>
+                    <li class="menu__item"><a href="#calendar-container">Календарь</a></li>
+                    <img src="img/razvodnye-mosty.jpg" alt="" class="logo">
+                    <li class="menu__item"><a href="#price">Цены</a></li>
+                    <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__content">
+                <h1 class="header__title">Апартаменты на Екатерининской</h1>
+                <p class="header__text">Добро пожаловать в Санкт-Петербрург</p>
+                <a href="https://t.me/FedorovaMary" class="header__button">Хочу в Питер!</a>
+            </div>
+        </div>
+    </header>
+    <div class="about__container">
+        <div class="about__1">
+            <div id="lightgallery">
+                <a href="img/1e-big.jpg">
+                    <img src=img/1e.jpg alt=>
+                </a>
+               
+                    <a href="img/5e-big.jpg">
+                    <img src=img/5e.jpg alt=>
+                </a>
+                <a href="img/6e-big.jpg">
+                    <img src=img/6e.jpg alt=>
+                </a>
+                <a href="img/7e-big.jpg">
+                    <img src=img/7e.jpg alt=>
+                </a>
+                <a href="img/3e-big.jpg">
+                    <img src=img/3e.jpg alt=>
+                </a>
+                <a href="img/8e-big.jpg">
+                    <img src=img/8e.jpg alt=>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column__container">
+        <div class="team__item">
+            <a name="contacts"></a>
+            <img class="team__item-img" src="img/i.jpg" alt="">
+            <h3 class="team__item-title">Марина Федорова</h3>
+            <p class="team__item-text">Управляющий апартаментов</p>
+            <div class="team__icon-box">
+                <a href="https://vk.com/fisherma"> <i class="icon-vk"></i></a>
+                <a href="mailto:fedma001@mail.ru"> <i class="icon-mail"></i></a>
+                <a href="https://t.me/FedorovaMary"> <i class="icon-telegram"></i></a>
+                <a href="tel:+79657737525"> <img class="contact__item-img" src="img/phone_auricular_attribute_as_freepik_from_flaticoncom_3317.png" alt=""></a>
+            </div>
+        </div>
+        <div class="price__container" id="calendar-container">
+            <h2 class="team__item-title">Календарь занятости</h2>
+            <div class = "calendar" data-language="ru" id="calendar">
+                <img class="calendar__picture" src="/img/loading.gif" alt="loading...">
+            </div>
+        </div>
+        <div id="price" class="price__container">
+            <h2 class="team__item-title">Сколько стоит?</h2>
+            <p class="price__list">Сутки - 1500 рублей</p>
+            <p class="price__list">Вместимость - 2 человека + ребенок (до 4 лет)</p>
+        </div>
+    </div>
+    <div id="map_container">
+        <h3 class="team__item-title"><a name="contacts"></a>Адрес</h3>
+        <img class="contact__item-img" src="img/pin_2_3318.png" alt=""> Санкт-Петербрург, Мурино Екатерининская 17 кв 187
+        <div id="map"></div>
+    </div>
+    <div class="picture__wide">
+        <img src="img/spb_big.jpg" alt="">
+        <img src="img/spb_big.jpg" alt="">
+        <img src="img/spb_big.jpg" alt="">
+    </div>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery')); 
+    </script>
+</body>
+</html>
