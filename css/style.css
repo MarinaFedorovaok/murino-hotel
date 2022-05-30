@@ -243,4 +243,16 @@ body {
       width: 10px;
       height: auto;
     }
+    .menu li{
+        display: none;
+    }
+    .column__container > div .filial_container {
+        width: 80%;
+    }    
+}
+.column__container > div .filial_container {
+    width: 40%;
+}
+.filial_container img{
+    width: 100%;
 }

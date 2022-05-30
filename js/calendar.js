@@ -1,4 +1,3 @@
-var calendar_url = "http://localhost:5500/calendar.ics";
 var Interval = {
 	start: Number.NaN,
 	end: Number.NaN,
